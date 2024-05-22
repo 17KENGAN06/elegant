@@ -1,0 +1,34 @@
+.values {
+	padding: 40px 0;
+}
+
+// .values__grid {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	gap: 24px;
+
+// 	display: grid;
+// 	grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+// }
+
+.values__grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+
+	& > * {
+		flex: 1;
+		min-width: 262px;
+	}
+
+	@include mobile {
+		display: grid;
+		gap: 24px 8px;
+		grid-template-columns: repeat(2, minmax(152px, 1fr));
+
+		& > * {
+			flex: none;
+			min-width: auto;
+		}
+	}
+}

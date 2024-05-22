@@ -1,0 +1,72 @@
+.nav {
+	padding: 16px 0;
+	background-color: #ffc95c;
+}
+
+.nav__logo {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+
+.nav__btn-mobile-nav {
+	display: none;
+
+	@include mobile {
+		display: block;
+	}
+}
+
+.nav__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.nav__link {
+	color: #141718;
+	display: flex;
+	gap: 2px;
+	align-items: center;
+}
+
+.nav__btns {
+	display: flex;
+	gap: 17px;
+	align-items: center;
+}
+
+.nav__btn {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+@include mobile {
+	.nav__list,
+	.nav__btn--search,
+	.nav__btn--user {
+		display: none;
+	}
+}
+
+.nav__btn-count {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+
+	border-radius: 50%;
+	background-color: #141718;
+
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: 700;
+	color: var(--tagline-line);
+	text-align: center;
+}

@@ -1,0 +1,13 @@
+.logo,
+a.logo {
+	font-size: 24px;
+	font-weight: 500px;
+	line-height: 1;
+	font-family: var(--font-accent);
+
+	color: #000;
+
+	@include mobile {
+		font-size: 16px;
+	}
+}
